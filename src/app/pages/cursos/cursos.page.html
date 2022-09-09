@@ -1,0 +1,100 @@
+<head>
+  <style>
+    * {
+      user-select: none;
+    }
+    ion-row {
+      margin-right: 24px;
+      margin-left: 24px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .lead {
+      display: flex;
+      height: 48px;
+      align-items: center;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+    .btn-primary {
+      width: 100%;
+      --background: linear-gradient(180deg, #F48742 0%, #F56087 100%);
+    }
+    .course-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .course-card {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      gap: 10px;
+      background-color: #F4F4F7;
+      border-radius: 16px;
+    }
+    .section {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #92949C;
+    }
+    .subject {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    .percent-container {
+      padding: 0px 12px;
+      background-color: #D0FBED;
+      border-radius: 24px;
+    }
+    .percent {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 32px;
+      color: #12D696;
+    }
+  </style>
+</head>
+<ion-content>
+  <div class="container">
+    <div style="display: flex; cursor: pointer">
+      <ion-img (click)="toggleMenu()" src="/assets/svg/menu.svg"></ion-img>
+    </div>
+    <div class="wrapper">
+      <p class="lead">Tus Cursos</p>
+      <div class="course-container">
+        <div routerLink="/descripcion-curso" class="course-card" *ngFor="let asignatura of asignaturas | async">
+          <div class="text-container">
+            <p class="section">006D</p>
+            <p class="subject">{{asignatura["nombre"]}}</p>
+          </div>
+          <div class="percent-container">
+            <p *ngIf="asignatura['inasistencias'] == 0" class="percent">100%</p>
+            <p *ngIf="asignatura['inasistencias'] !== 0" class="percent">{{ (asignatura["inasistencias"] / (asignatura["asistencias"] + asignatura["inasistencias"]) * 100).toFixed(0) }}%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-button (click)="presentAlert()" class="btn-primary">
+              Agregar Curso
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-footer>

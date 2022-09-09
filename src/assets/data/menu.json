@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "home-outline",
+    "name": "Inicio",
+    "redirectTo": "/inicio"
+  },
+  {
+    "icon": "library-outline",
+    "name": "Cursos",
+    "redirectTo": "/cursos"
+  },
+  {
+    "icon": "person-outline",
+    "name": "Perfil",
+    "redirectTo": "/perfil"
+  },
+  {
+    "icon": "log-out-outline",
+    "name": "Cerrar Sesion",
+    "redirectTo": "/home"
+  }
+]

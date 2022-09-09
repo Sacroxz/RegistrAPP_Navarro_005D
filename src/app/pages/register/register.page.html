@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="container">
+    <div class="wrapper">
+      <div style="display: flex; cursor: pointer">
+        <ion-img routerLink="/home" routerDirection="back" src="/assets/svg/chevron-left.svg"></ion-img>
+      </div>
+      <div class="top">
+        <p class="lead">Crear Cuenta</p>
+      </div>
+      <form>
+        <div class="input-container">
+          <p>Correo electronico</p>
+          <ion-input type="email"></ion-input>
+        </div>
+        <div class="input-container">
+          <p>Contrasena</p>
+          <ion-input type="password"></ion-input>
+        </div>
+        <div class="input-container">
+          <p>Tipo de Cuenta</p>
+          <ion-input></ion-input>
+        </div>
+        <ion-button routerLink="/inicio" color="secondary" expand="block" fill="solid" shape="round">
+          Crear Cuenta
+        </ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

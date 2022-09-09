@@ -1,0 +1,59 @@
+<ion-content>
+  <div class="container">
+    <div style="display: flex; cursor: pointer">
+      <ion-img (click)="toggleMenu()" src="/assets/svg/menu.svg"></ion-img>
+    </div>
+    <div class="wrapper">
+      <div class="top">
+        <p class="lead">Hola, Pablo 👋</p>
+      </div>
+      <div class="info_card">
+        <div>
+          <p class="today">Viernes, 9 de Septiembre</p>
+          <p class="classes_left">1/2 Clases</p>
+        </div>
+      </div>
+      <p class="sublead">Clases de Hoy</p>
+        <div class="class_container">
+          <div class="class_card">
+            <div class="class_details">
+              <div class="status_container">
+                <div class="status_icon"></div>
+                <p class="status">Asistida</p>
+              </div>
+              <p class="time">12:00 PM</p>
+            </div>
+            <p class="subject">Programacion de Aplicaciones Moviles</p>
+          </div>
+          <div class="class_card">
+            <div class="class_details">
+              <div class="status_container">
+                <div class="status_icon_not_started"></div>
+                <p class="status not-started">Sin empezar</p>
+              </div>
+              <p class="time">17:30 PM</p>
+            </div>
+            <p class="subject">Ingles Intermedio</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button routerLink="/scanner" class="btn-primary">
+              Abrir Lector
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button routerLink="/horario" class="btn-secondary">
+              Ver Horario
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-footer>

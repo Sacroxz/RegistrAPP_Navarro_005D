@@ -1,0 +1,37 @@
+[
+  {
+    "nombre": "Arquitectura",
+    "asistencias": 2,
+    "inasistencias": 1
+  },
+  {
+    "nombre": "Ingles Intermedio",
+    "asistencias": 9,
+    "inasistencias": 2
+  },
+  {
+    "nombre": "Estadistica Descriptiva",
+    "asistencias": 4,
+    "inasistencias": 2
+  },
+  {
+    "nombre": "Calidad de Software",
+    "asistencias": 3,
+    "inasistencias": 0
+  },
+  {
+    "nombre": "Proceso de Portafolio",
+    "asistencias": 4,
+    "inasistencias": 0
+  },
+  {
+    "nombre": "Etica para el Trabajo",
+    "asistencias": 7,
+    "inasistencias": 0
+  },
+  {
+    "nombre": "Programacion de Aplicaciones Moviles",
+    "asistencias": 5,
+    "inasistencias": 3
+  }
+]
