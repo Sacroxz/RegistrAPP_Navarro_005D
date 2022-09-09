@@ -8,9 +8,6 @@ ion-item::part(native) {
   border: 0 solid black;
 }
 * {
-  user-select: none; /* DELETE */
-}
-* {
 user-select: none;
 }
 p {

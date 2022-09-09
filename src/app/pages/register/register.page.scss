@@ -1,15 +1,9 @@
 ion-content {
   --ion-background-color: linear-gradient(180deg, #F48742 0%, #F56087 100%);
 }
-ion-item, ion-radio, ion-label, ion-list {
+ion-item, ion-list, ion-radio {
   --ion-background-color: transparent;
   --color: white;
-}
-ion-radio {
-  --color: #F4F4F7;
-}
-ion-radio::part(container) {
-  background: #fff !important;
 }
 * {
   user-select: none;
