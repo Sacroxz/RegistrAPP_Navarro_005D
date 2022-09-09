@@ -18,7 +18,18 @@
         </div>
         <div class="input-container">
           <p>Tipo de Cuenta</p>
-          <ion-input></ion-input>
+          <ion-list>
+            <ion-radio-group value="biff"> 
+              <ion-item>
+                <ion-label>Estudiante</ion-label>
+                <ion-radio slot="start" value="biff"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Profesor</ion-label>
+                <ion-radio slot="start" value="griff"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
         </div>
         <ion-button routerLink="/inicio" color="secondary" expand="block" fill="solid" shape="round">
           Crear Cuenta
